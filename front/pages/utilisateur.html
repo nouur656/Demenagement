@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Utilisateur</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
+  <header class="header">
+    <div class="header-left">
+      <img src="../assets/images/logo.png" alt="Logo" class="logo">
+      <span class="app-name">Déménagement</span>
+    </div>
+
+    <div class="header-right">
+      <button class="menu-btn">☰</button>
+    </div>
+  </header>
+
   <!-- HTML : afficher la liste des chauffeurs -->
-  <h1>Page Utilisateur</h1>
+  <h1>Utilisateur</h1>
 
   <section id="chauffeurs">
     <h2>Choisir un chauffeur</h2>
@@ -26,8 +37,41 @@
     </div>
   </section>
 
+   <!-- Localisation (départ / arrivée) -->
+  <section id="localisation">
+    <h2>Localisation</h2>
+
+    <input type="text" id="depart" placeholder="Adresse de départ">
+    <br><br>
+    <input type="text" id="arrivee" placeholder="Adresse d’arrivée">
+
+    <div id="map">Carte ici</div>
+  </section>
+
+  <!-- HTML : afficher la liste des aides -->
+  <section id="aides">
+    <h2>Personnes d’aide</h2>
+
+    <label>
+      <input type="checkbox" value="aide1"> Aide 1
+    </label><br>
+
+    <label>
+      <input type="checkbox" value="aide2"> Aide 2
+    </label><br>
+
+    <label>
+      <input type="checkbox" value="aide3"> Aide 3
+    </label>
+  </section>
+
+  <!-- HTML : Commander -->
+  <section id="commande">
+    <button id="commander">Commander maintenant</button>
+  </section>
 
 
-  <script src="utilisateur.js"></script>
+
+  <script src="../js/utilisateur.js"></script>
 </body>
 </html>

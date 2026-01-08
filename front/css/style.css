@@ -14,3 +14,177 @@ body {
 .chauffeur:hover {
   background-color: #f0f0f0;
 }
+
+/* -- Localisation (départ / arrivée) -- */
+#map {
+  margin-top: 10px;
+  height: 200px;
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 200px;
+}
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 30px;
+}
+
+/* TITRES */
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* SECTIONS */
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Design des chauffeurs (cartes) */
+#chauffeurs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chauffeur {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chauffeur:hover {
+  background-color: #e3f2fd;
+  border-color: #2196f3;
+  transform: translateY(-2px);
+}
+
+
+/* Localisation (carte) */
+#localisation input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#localisation input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+#map {
+  height: 250px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-weight: bold;
+}
+
+
+/* Personnes d’aide (checkbox stylées) */
+#aides label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#aides input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+
+/* Bouton “Commander maintenant” */
+#commande {
+  text-align: right;
+}
+
+#commander {
+  background: linear-gradient(135deg, #2196f3, #1e88e5);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#commander:hover {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  transform: scale(1.05);
+}
+
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.app-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.menu-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2c3e50;
+}
+
+.menu-btn:hover {
+  color: #2196f3;
+}
