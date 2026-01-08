@@ -2,25 +2,27 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0highlight">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Déménagement – Plateforme intelligente</title>
 
   <meta name="description"
         content="Plateforme intelligente de mise en relation pour déménagement : chauffeurs, aides et utilisateurs.">
 
-  <link rel="stylesheet" href="../css/style.css">
-  <button id="themeToggle">🌙 Mode sombre</button>
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+
+  <!-- Bouton thème (DOIT être dans body) -->
+  <button id="themeToggle" class="theme-toggle">🌙 Mode sombre</button>
 
   <div class="page">
 
     <!-- ================= HERO ================= -->
     <header class="container">
-      <img src="../assets/deme.png" alt="Logo Déménagement" class="logo">
+      <img src="/assets/deme.png" alt="Logo Déménagement" class="logo">
 
       <h1>Déménagez sans stress</h1>
 
@@ -41,7 +43,6 @@
     <!-- ================= STATS ================= -->
     <section class="container info">
       <h2>Une solution qui fait la différence</h2>
-
       <ul>
         <li><strong>+300</strong> déménagements simulés</li>
         <li><strong>24/7</strong> disponibilité des services</li>
@@ -53,25 +54,12 @@
     <!-- ================= COMMENT ÇA MARCHE ================= -->
     <section class="container info">
       <h2>Comment ça fonctionne ?</h2>
-
       <ol>
-        <li>Choisissez votre rôle sur la plateforme</li>
-        <li>Complétez vos informations personnelles</li>
-        <li>Recevez des demandes ou notifications en temps réel</li>
-        <li>Acceptez ou refusez les missions proposées</li>
+        <li>Choisissez votre rôle</li>
+        <li>Complétez vos informations</li>
+        <li>Recevez des notifications</li>
+        <li>Acceptez ou refusez les missions</li>
       </ol>
-    </section>
-
-    <!-- ================= POURQUOI NOUS ================= -->
-    <section class="container info">
-      <h2>Pourquoi choisir Déménagement ?</h2>
-
-      <ul>
-        <li><strong>Rapidité</strong> – mise en relation instantanée</li>
-        <li><strong>Sécurité</strong> – profils vérifiés</li>
-        <li><strong>Simplicité</strong> – aucune complexité inutile</li>
-        <li><strong>Accessibilité</strong> – mobile & desktop</li>
-      </ul>
     </section>
 
     <!-- ================= PROFILS ================= -->
@@ -80,26 +68,17 @@
 
       <article>
         <h3>🚚 Chauffeur</h3>
-        <p>
-          Gérez vos missions, recevez des commandes et ajustez vos prix
-          directement depuis votre espace personnel.
-        </p>
+        <p>Gérez vos missions et vos prix.</p>
       </article>
 
       <article>
         <h3>🤝 Personne d’aide</h3>
-        <p>
-          Participez aux déménagements en aidant au chargement
-          et déchargement selon vos disponibilités.
-        </p>
+        <p>Aidez au chargement selon vos disponibilités.</p>
       </article>
 
       <article>
         <h3>👤 Utilisateur</h3>
-        <p>
-          Publiez vos demandes, comparez les offres et choisissez
-          les prestataires les plus adaptés.
-        </p>
+        <p>Publiez et comparez les offres.</p>
       </article>
     </section>
 
@@ -111,6 +90,7 @@
 
   </div>
 
-  <script src="../js/main.js"></script>
+  <!-- JS -->
+  <script src="/js/main.js"></script>
 </body>
 </html>

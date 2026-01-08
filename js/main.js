@@ -120,3 +120,11 @@ if (toggle) {
 }
 toggle.textContent = 
   document.body.classList.contains("dark") ? "☀️ Mode clair" : "🌙 Mode sombre";
+fetch("http://localhost:3000/chauffeur", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ nom, tel, ville, cin })
+});
+function goTo(page) {
+  window.location.href = "/html/" + page;
+}
