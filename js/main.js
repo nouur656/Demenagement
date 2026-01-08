@@ -18,3 +18,9 @@ document.getElementById("chauffeurForm")?.addEventListener("submit", function (e
   alert("Inscription chauffeur réussie");
   window.location.href = "notif-chauffeur.html";
 });
+let prix = 300;
+
+function changePrice(val) {
+  prix += val;
+  document.getElementById("prix").innerText = prix;
+}

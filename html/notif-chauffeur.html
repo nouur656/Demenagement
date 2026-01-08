@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Notifications Chauffeur</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Nouvelle commande</h2>
+
+<div class="card">
+  <p>Localisation de la commande (carte)</p>
+  <p>Prix : <span id="prix">300</span> DH</p>
+
+  <button onclick="changePrice(10)">+</button>
+  <button onclick="changePrice(-10)">-</button><br><br>
+
+  <button onclick="alert('Commande acceptée')">Accepter</button>
+  <button onclick="alert('Commande annulée')">Annuler</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
