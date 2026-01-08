@@ -1,77 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Page Utilisateur</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déménagement Pro</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <header>
+        <img src="../assets/images/logo.png" class="logo" alt="Logo">
+        <button class="btn-filter">Mon Profil</button>
+    </header>
 
-  <header class="header">
-    <div class="header-left">
-      <img src="../assets/images/logo.png" alt="Logo" class="logo">
-      <span class="app-name">Déménagement</span>
+    <div class="container">
+        <div class="hero-banner">
+            <h1>Trouvez votre transporteur</h1>
+            <p>Rapide, fiable et au meilleur prix au Maroc</p>
+        </div>
+
+        <div class="filter-group">
+            <button class="btn-filter active" data-type="all">Tous</button>
+            <button class="btn-filter" data-type="meme-ville">Même ville</button>
+            <button class="btn-filter" data-type="ville-to-ville">Ville à Ville</button>
+            <button class="btn-filter" data-type="colis">Envoyer un colis</button>
+        </div>
+
+        <div id="driver-list" class="driver-grid">
+            </div>
     </div>
 
-    <div class="header-right">
-      <button class="menu-btn">☰</button>
-    </div>
-  </header>
+    
 
-  <!-- HTML : afficher la liste des chauffeurs -->
-  <h1>Utilisateur</h1>
-
-  <section id="chauffeurs">
-    <h2>Choisir un chauffeur</h2>
-
-    <div class="chauffeur" data-id="1">
-      Chauffeur 1 – Casablanca
-    </div>
-
-    <div class="chauffeur" data-id="2">
-      Chauffeur 2 – Rabat
-    </div>
-
-    <div class="chauffeur" data-id="3">
-      Chauffeur 3 – Fès
-    </div>
-  </section>
-
-   <!-- Localisation (départ / arrivée) -->
-  <section id="localisation">
-    <h2>Localisation</h2>
-
-    <input type="text" id="depart" placeholder="Adresse de départ">
-    <br><br>
-    <input type="text" id="arrivee" placeholder="Adresse d’arrivée">
-
-    <div id="map">Carte ici</div>
-  </section>
-
-  <!-- HTML : afficher la liste des aides -->
-  <section id="aides">
-    <h2>Personnes d’aide</h2>
-
-    <label>
-      <input type="checkbox" value="aide1"> Aide 1
-    </label><br>
-
-    <label>
-      <input type="checkbox" value="aide2"> Aide 2
-    </label><br>
-
-    <label>
-      <input type="checkbox" value="aide3"> Aide 3
-    </label>
-  </section>
-
-  <!-- HTML : Commander -->
-  <section id="commande">
-    <button id="commander">Commander maintenant</button>
-  </section>
-
-
-
-  <script src="../js/utilisateur.js"></script>
+    <script src="../js/utilisateur.js"></script>
 </body>
 </html>

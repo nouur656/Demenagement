@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Aide - Déménagement</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logo.png" class="logo" alt="Logo">
+    </header>
+
+    <div class="container">
+        <div class="form-card">
+            <h2>Devenir Aide</h2>
+            
+            <div class="profile-upload">
+                <div class="circle-placeholder" id="profile-preview">
+                    <span>Photo</span>
+                </div>
+                <input type="file" id="photo-profile" accept="image/*" hidden>
+                <button type="button" class="btn-sm" onclick="document.getElementById('photo-profile').click()">Choisir une photo</button>
+            </div>
+
+            <form id="form-aide">
+                <div class="input-group">
+                    <input type="text" id="nom" placeholder="Entrez votre nom" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="telephone" placeholder="N° Téléphone" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="ville" placeholder="Ville" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="cin-number" placeholder="Coordonnées de la Carte N°" required>
+                </div>
+
+                <div class="file-upload-box">
+                    <p>Photo de la Carte Nationale</p>
+                    <input type="file" id="photo-cin" accept="image/*" required>
+                </div>
+
+                <button type="submit" class="btn-confirm" style="width: 100%; margin-top: 20px;">Valider</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/inscription-aide.js"></script>
+</body>
+</html>
