@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détails Commande</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header><img src="../assets/images/logo.png" class="logo"></header>
+
+    <div id="map"></div>
+
+    <div class="location-inputs">
+        <input type="text" id="depart" placeholder="Adresse de départ">
+        <input type="text" id="arrivee" placeholder="Adresse d'arrivée">
+        <button onclick="updatePrice()">Calculer Trajet</button>
+    </div>
+
+    <div class="aides-list">
+        <h4>Sélectionner des aides</h4>
+        <div id="aides-container">
+            </div>
+    </div>
+
+    <div class="footer-fixed">
+        <button class="btn-cancel" onclick="history.back()">Annuler</button>
+        <div id="total-price">Total: 0 DH</div>
+        <button class="btn-confirm" onclick="passerCommande()">Commander maintenant</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/details-chauffeur.js"></script>
+</body>
+</html>
