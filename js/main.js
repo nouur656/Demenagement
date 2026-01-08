@@ -89,3 +89,25 @@ function acceptAide() {
 function refuseAide() {
   alert("Vous avez refusé la demande d’aide.");
 }
+function setStatus(text, type) {
+  const status = document.createElement("div");
+  status.className = "status " + type;
+  status.innerText = text;
+
+  const card = document.querySelector(".card");
+  if (card) {
+    card.prepend(status);
+  }
+}
+
+function acceptCommande() {
+  setStatus("Commande acceptée", "ok");
+  alert("Commande acceptée. Le client a été notifié.");
+  disableActions();
+}
+
+function cancelCommande() {
+  setStatus("Commande refusée", "no");
+  alert("Commande refusée.");
+  disableActions();
+}
