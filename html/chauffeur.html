@@ -2,25 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inscription Chauffeur</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
 
-<h2>Inscription Chauffeur</h2>
+  <main class="container">
+    <h2>Inscription Chauffeur</h2>
 
-<form id="chauffeurForm">
-  <input type="text" id="nom" placeholder="Nom"><br>
-  <input type="tel" id="tel" placeholder="Téléphone"><br>
-  <input type="text" id="ville" placeholder="Ville"><br>
-  <input type="text" id="cin" placeholder="Carte nationale"><br>
+    <form id="chauffeurForm">
 
-  <label>Les Photos des véhicules</label>
-  <input type="file" multiple><br><br>
+      <input type="text" id="nom" placeholder="Nom complet" required>
 
-  <button type="submit">Valider</button>
-</form>
+      <input type="tel" id="tel" placeholder="Téléphone" required>
 
-<script src="js/main.js"></script>
+      <input type="text" id="ville" placeholder="Ville" required>
+
+      <input type="text" id="cin" placeholder="Carte nationale" required>
+
+      <label for="photos">Photos du véhicule</label>
+      <input type="file" id="photos" multiple>
+
+      <button type="submit">Valider</button>
+    </form>
+  </main>
+
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
