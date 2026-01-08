@@ -1,0 +1,16 @@
+/* -- afficher la liste des chauffeurs -- */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.chauffeur {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.chauffeur:hover {
+  background-color: #f0f0f0;
+}
