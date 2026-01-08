@@ -2,40 +2,115 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choix utilisateur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0highlight">
+
+  <title>Déménagement – Plateforme intelligente</title>
+
+  <meta name="description"
+        content="Plateforme intelligente de mise en relation pour déménagement : chauffeurs, aides et utilisateurs.">
+
   <link rel="stylesheet" href="../css/style.css">
+  <button id="themeToggle">🌙 Mode sombre</button>
 
 </head>
 
 <body>
 
-  <header class="container">
-    <img src="assets/logo.png" alt="Logo" class="logo">
-  </header>
+  <div class="page">
 
-  <main class="container">
-    <h1>Bienvenue</h1>
+    <!-- ================= HERO ================= -->
+    <header class="container">
+      <img src="../assets/deme.png" alt="Logo Déménagement" class="logo">
 
-    <button onclick="goTo('chauffeur.html')">Chauffeur</button>
-    <button onclick="alert('Page utilisateur faite par le binôme')">Utilisateur</button>
-    <button onclick="goTo('notif-aide.html')">Personne d’aide</button>
- <p class="subtitle">
-  Une plateforme simple pour organiser votre déménagement rapidement et en toute sécurité.
-</p>
+      <h1>Déménagez sans stress</h1>
 
-<section class="info">
-  <h3>Comment ça marche ?</h3>
-  <ul>
-    <li>Choisissez votre rôle</li>
-    <li>Complétez votre inscription</li>
-    <li>Recevez ou acceptez des commandes</li>
-  </ul>
-</section>
+      <p class="subtitle">
+        La première plateforme intelligente qui connecte chauffeurs,
+        aides et particuliers pour un déménagement rapide et sécurisé.
+      </p>
 
-  </main>
+      <nav>
+        <ul>
+          <li><button onclick="goTo('chauffeur.html')">🚚 Je suis chauffeur</button></li>
+          <li><button onclick="alert('Page utilisateur réalisée par le binôme')">👤 Je suis utilisateur</button></li>
+          <li><button onclick="goTo('notif-aide.html')">🤝 Je suis une personne d’aide</button></li>
+        </ul>
+      </nav>
+    </header>
 
- <script src="../js/main.js"></script>
+    <!-- ================= STATS ================= -->
+    <section class="container info">
+      <h2>Une solution qui fait la différence</h2>
 
+      <ul>
+        <li><strong>+300</strong> déménagements simulés</li>
+        <li><strong>24/7</strong> disponibilité des services</li>
+        <li><strong>100%</strong> interface responsive</li>
+        <li><strong>0</strong> stress pour l’utilisateur</li>
+      </ul>
+    </section>
+
+    <!-- ================= COMMENT ÇA MARCHE ================= -->
+    <section class="container info">
+      <h2>Comment ça fonctionne ?</h2>
+
+      <ol>
+        <li>Choisissez votre rôle sur la plateforme</li>
+        <li>Complétez vos informations personnelles</li>
+        <li>Recevez des demandes ou notifications en temps réel</li>
+        <li>Acceptez ou refusez les missions proposées</li>
+      </ol>
+    </section>
+
+    <!-- ================= POURQUOI NOUS ================= -->
+    <section class="container info">
+      <h2>Pourquoi choisir Déménagement ?</h2>
+
+      <ul>
+        <li><strong>Rapidité</strong> – mise en relation instantanée</li>
+        <li><strong>Sécurité</strong> – profils vérifiés</li>
+        <li><strong>Simplicité</strong> – aucune complexité inutile</li>
+        <li><strong>Accessibilité</strong> – mobile & desktop</li>
+      </ul>
+    </section>
+
+    <!-- ================= PROFILS ================= -->
+    <section class="container info">
+      <h2>Des profils adaptés à chaque besoin</h2>
+
+      <article>
+        <h3>🚚 Chauffeur</h3>
+        <p>
+          Gérez vos missions, recevez des commandes et ajustez vos prix
+          directement depuis votre espace personnel.
+        </p>
+      </article>
+
+      <article>
+        <h3>🤝 Personne d’aide</h3>
+        <p>
+          Participez aux déménagements en aidant au chargement
+          et déchargement selon vos disponibilités.
+        </p>
+      </article>
+
+      <article>
+        <h3>👤 Utilisateur</h3>
+        <p>
+          Publiez vos demandes, comparez les offres et choisissez
+          les prestataires les plus adaptés.
+        </p>
+      </article>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+      <p>© 2026 – Projet académique | Plateforme Déménagement</p>
+      <p class="subtitle">Développé dans le cadre d’un mini-projet universitaire.</p>
+    </footer>
+
+  </div>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
