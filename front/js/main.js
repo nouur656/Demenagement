@@ -126,5 +126,5 @@ fetch("http://localhost:3000/chauffeur", {
   body: JSON.stringify({ nom, tel, ville, cin })
 });
 function goTo(page) {
-  window.location.href = "/html/" + page;
+  window.location.href = page;
 }

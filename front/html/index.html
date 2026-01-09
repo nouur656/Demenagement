@@ -10,7 +10,9 @@
         content="Plateforme intelligente de mise en relation pour déménagement : chauffeurs, aides et utilisateurs.">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
 </head>
 
 <body>
@@ -31,13 +33,34 @@
         aides et particuliers pour un déménagement rapide et sécurisé.
       </p>
 
-      <nav>
-        <ul>
-          <li><button onclick="goTo('chauffeur.html')">🚚 Je suis chauffeur</button></li>
-          <li><button onclick="alert('Page utilisateur réalisée par le binôme')">👤 Je suis utilisateur</button></li>
-          <li><button onclick="goTo('notif-aide.html')">🤝 Je suis une personne d’aide</button></li>
-        </ul>
-      </nav>
+  <nav>
+    <ul>
+      <li>
+        <button onclick="goTo('chauffeur.html')">
+          🚚 Je suis chauffeur
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('user-client.html')">
+          👤 Utilisateur (Client)
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('utilisateur.html')">
+          👤 Utilisateur (Autre)
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('notif-aide.html')">
+          🤝 Je suis une personne d’aide
+        </button>
+      </li>
+    </ul>
+  </nav>
+
     </header>
 
     <!-- ================= STATS ================= -->
@@ -91,6 +114,7 @@
   </div>
 
   <!-- JS -->
-  <script src="/js/main.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
