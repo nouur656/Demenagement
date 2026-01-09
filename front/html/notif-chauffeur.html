@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications Chauffeur</title>
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+  <main class="container">
+    <h2>🚚 Nouvelle commande reçue</h2>
+
+    <div class="card">
+
+      <p><strong>Client :</strong> Ahmed Benali</p>
+      <p><strong>Téléphone :</strong> 06 12 34 56 78</p>
+
+      <hr>
+
+      <p><strong>Départ :</strong> Quartier A</p>
+      <p><strong>Arrivée :</strong> Quartier B</p>
+
+      <p><strong>Date :</strong> 10 janvier 2026</p>
+      <p><strong>Heure :</strong> 09:00</p>
+
+      <hr>
+
+      <p>💰 <strong>Prix proposé :</strong> <span id="prix">300</span> DH</p>
+
+      <div class="price-buttons">
+        <button onclick="changePrice(10)">+ 10</button>
+        <button onclick="changePrice(-10)">- 10</button>
+      </div>
+
+      <small class="hint">
+        Vous pouvez ajuster le prix avant d’accepter la commande.
+      </small>
+
+      <button onclick="acceptCommande()">✅ Accepter la commande</button>
+      <button onclick="cancelCommande()">❌ Refuser</button>
+
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+
+
+</body>
+</html>

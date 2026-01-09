@@ -1,0 +1,283 @@
+/* =====================================================
+   RESET & BASE
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #f5f7fb, #eef1f8);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   GLOBAL LAYOUT
+===================================================== */
+header,
+main,
+section,
+footer {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.06),
+    0 1px 3px rgba(0,0,0,.04);
+}
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+p {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+.logo {
+  width: 140px;        /* taille du logo */
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+}
+
+/* =====================================================
+   LISTS
+===================================================== */
+ul,
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #4b5563;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37,99,235,.25);
+}
+
+/* =====================================================
+   FORMULAIRE (CHAUFFEUR)
+===================================================== */
+form {
+  max-width: 520px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input,
+select,
+textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  transition: border .2s ease, box-shadow .2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+input[type="file"] {
+  background: #f9fafb;
+}
+
+/* Bouton submit bien séparé */
+form button[type="submit"] {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+/* =====================================================
+   CARDS / BLOCS INTERNES
+===================================================== */
+.card {
+  background: #f9fafb;
+  padding: 24px;
+  border-radius: 14px;
+}
+
+/* =====================================================
+   PRIX (NOTIFICATIONS)
+===================================================== */
+#prix {
+  font-size: 22px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* =====================================================
+   TEXTE D’INFO
+===================================================== */
+small,
+.hint {
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  header,
+  main,
+  section,
+  footer {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.card button {
+  margin-top: 8px;
+}
+
+.card button + button {
+  background: #dc2626;
+}
+
+.card button + button:hover {
+  background: #991b1b;
+}
+/* =========================
+   FIX POSITION BOUTON VALIDER
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tous les champs */
+form > * {
+  order: 1;
+}
+
+/* Bouton submit toujours en bas */
+form button[type="submit"] {
+  order: 99;
+  margin-top: 24px;
+}
+/* =====================================================
+   MODE SOMBRE MANUEL
+===================================================== */
+body.dark {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+body.dark header,
+body.dark main,
+body.dark section,
+body.dark footer {
+  background: #020617;
+}
+
+body.dark p,
+body.dark li,
+body.dark .subtitle,
+body.dark small {
+  color: #9ca3af;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #f9fafb;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+body.dark .card {
+  background: #020617;
+}
+
+body.dark button {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}

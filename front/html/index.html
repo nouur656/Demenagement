@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Déménagement – Plateforme intelligente</title>
+
+  <meta name="description"
+        content="Plateforme intelligente de mise en relation pour déménagement : chauffeurs, aides et utilisateurs.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <ul>
+  <li><a href="pages/user.html">Utilisateur</a></li>
+  <li><a href="pages/admin.html">Admin</a></li>
+  <li><a href="pages/contact.html">Contact</a></li>
+</ul>
+
+  <!-- Bouton thème (DOIT être dans body) -->
+  <button id="themeToggle" class="theme-toggle">🌙 Mode sombre</button>
+
+  <div class="page">
+
+    <!-- =========== HERO ========== -->
+    <header class="container">
+      <img src="/assets/deme.png" alt="Logo Déménagement" class="logo">
+
+      <h1>Déménagez sans stress</h1>
+
+      <p class="subtitle">
+        La première plateforme intelligente qui connecte chauffeurs,
+        aides et particuliers pour un déménagement rapide et sécurisé.
+      </p>
+
+  <nav>
+    <ul>
+      <li>
+        <button onclick="goTo('chauffeur.html')">
+          🚚 Je suis chauffeur
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('user-client.html')">
+          👤 Utilisateur (Client)
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('utilisateur.html')">
+          👤 Utilisateur (Autre)
+        </button>
+      </li>
+
+      <li>
+        <button onclick="goTo('notif-aide.html')">
+          🤝 Je suis une personne d’aide
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+    </header>
+
+    <!-- ================= STATS ================= -->
+    <section class="container info">
+      <h2>Une solution qui fait la différence</h2>
+      <ul>
+        <li><strong>+300</strong> déménagements simulés</li>
+        <li><strong>24/7</strong> disponibilité des services</li>
+        <li><strong>100%</strong> interface responsive</li>
+        <li><strong>0</strong> stress pour l’utilisateur</li>
+      </ul>
+    </section>
+
+    <!-- ================= COMMENT ÇA MARCHE ================= -->
+    <section class="container info">
+      <h2>Comment ça fonctionne ?</h2>
+      <ol>
+        <li>Choisissez votre rôle</li>
+        <li>Complétez vos informations</li>
+        <li>Recevez des notifications</li>
+        <li>Acceptez ou refusez les missions</li>
+      </ol>
+    </section>
+
+    <!-- ================= PROFILS ================= -->
+    <section class="container info">
+      <h2>Des profils adaptés à chaque besoin</h2>
+
+      <article>
+        <h3>🚚 Chauffeur</h3>
+        <p>Gérez vos missions et vos prix.</p>
+      </article>
+
+      <article>
+        <h3>🤝 Personne d’aide</h3>
+        <p>Aidez au chargement selon vos disponibilités.</p>
+      </article>
+
+      <article>
+        <h3>👤 Utilisateur</h3>
+        <p>Publiez et comparez les offres.</p>
+      </article>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="container">
+      <p>© 2026 – Projet académique | Plateforme Déménagement</p>
+      <p class="subtitle">Développé dans le cadre d’un mini-projet universitaire.</p>
+    </footer>
+
+  </div>
+
+  <!-- JS -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

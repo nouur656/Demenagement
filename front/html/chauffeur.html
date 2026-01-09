@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Chauffeur</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Bouton mode sombre (hors formulaire) -->
+  <button id="themeToggle" class="theme-toggle" type="button">
+    🌙 Mode sombre
+  </button>
+
+  <main class="container">
+    <h2>Inscription Chauffeur</h2>
+
+    <form id="chauffeurForm" novalidate>
+
+      <!-- Informations personnelles -->
+      <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Nom complet"
+        required
+      >
+
+      <input
+        type="tel"
+        id="tel"
+        name="tel"
+        placeholder="Téléphone"
+        required
+      >
+
+      <input
+        type="text"
+        id="ville"
+        name="ville"
+        placeholder="Ville"
+        required
+      >
+
+      <input
+        type="text"
+        id="cin"
+        name="cin"
+        placeholder="Carte nationale"
+        required
+      >
+
+      <!-- Véhicule -->
+      <label for="vehicule">Type de véhicule</label>
+      <select id="vehicule" name="vehicule" required>
+        <option value="">Sélectionnez un véhicule</option>
+        <option value="camionnette">Camionnette</option>
+        <option value="camion">Camion</option>
+        <option value="pickup">Pick-up</option>
+      </select>
+
+      <!-- Photos -->
+      <label for="photos">Photos du véhicule</label>
+      <input
+        type="file"
+        id="photos"
+        name="photos"
+        multiple
+        accept="image/*"
+      >
+
+      <!-- Adresse -->
+      <textarea
+        id="adresse"
+        name="adresse"
+        placeholder="Adresse complète"
+        rows="3"
+        required
+      ></textarea>
+
+      <!-- Info -->
+      <small class="hint">
+        Les informations seront vérifiées avant la validation.
+      </small>
+
+      <!-- Bouton submit -->
+      <button type="submit">
+        Valider l’inscription
+      </button>
+
+    </form>
+  </main>
+
+  <!-- JS -->
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

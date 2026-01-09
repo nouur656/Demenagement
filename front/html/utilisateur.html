@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Utilisateur – Déménagement</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- ===== TITRE PRINCIPAL ===== -->
+    <section class="hero-banner">
+      <h1>Espace Utilisateur</h1>
+      <p class="subtitle">
+        Trouvez rapidement un chauffeur ou un transporteur adapté à votre besoin.
+      </p>
+    </section>
+
+
+    <!-- ===== LISTE DES CHAUFFEURS ===== -->
+    <section class="driver-grid" id="driver-list">
+
+      <!-- Exemple chauffeur 1 -->
+      <div class="card">
+        <h3>🚚 Chauffeur – Ahmed</h3>
+        <p><strong>Ville :</strong> Rabat</p>
+        <p><strong>Véhicule :</strong> Camionnette</p>
+        <p><strong>Prix estimé :</strong> 300 DH</p>
+
+        <button onclick="goTo('details-commande.html')">
+          Voir détails
+        </button>
+      </div>
+
+      <!-- Exemple chauffeur 2 -->
+      <div class="card">
+        <h3>🚚 Chauffeur – Youssef</h3>
+        <p><strong>Ville :</strong> Casablanca</p>
+        <p><strong>Véhicule :</strong> Camion</p>
+        <p><strong>Prix estimé :</strong> 450 DH</p>
+
+        <button onclick="goTo('details-commande.html')">
+          Voir détails
+        </button>
+      </div>
+
+      <!-- Exemple chauffeur 3 -->
+      <div class="card">
+        <h3>🚚 Chauffeur – Imane</h3>
+        <p><strong>Ville :</strong> Fès</p>
+        <p><strong>Véhicule :</strong> Pick-up</p>
+        <p><strong>Prix estimé :</strong> 280 DH</p>
+
+        <button onclick="goTo('details-commande.html')">
+          Voir détails
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ===== NAVIGATION ===== -->
+    <div style="margin-top: 30px; text-align: center;">
+      <button class="btn-cancel" onclick="goTo('index.html')">
+        ⬅ Retour à l’accueil
+      </button>
+    </div>
+
+  </main>
+
+  <!-- JS -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
